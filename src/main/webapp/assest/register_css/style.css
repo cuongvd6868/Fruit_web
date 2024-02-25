@@ -1,0 +1,177 @@
+@charset "UTF-8";
+html{
+    font-size: 62.5%;
+    height: 900px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    background-color: rgb(249, 249, 251);
+}
+
+.title{
+margin-top: 35px;
+}
+
+.title .register{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color:  #143C3C;
+}
+
+.form_contact{
+    display: flex;
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.img_contact{
+    width: 400px;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.form_submit{
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-grow: 1;
+}
+
+.form_row{
+    display: flex;
+    /* flex-grow: 1; */
+    gap: 35px;
+    
+}
+
+.form_row :last-child{
+    margin-bottom: 35px;
+}
+
+.form_group{
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+.form_group:focus-within .form_lable{
+    color: #143C3C;
+}
+.form_group:focus-within .form_input{
+    border-color: #143C3C;
+}
+
+.form_lable{
+    display: block;
+}
+
+.form_input{
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(224, 223, 230, 1);
+    /* rgb(102, 68, 196, 1) */
+    padding: 8px 0 14px 0;
+}
+
+
+/* radio */
+
+.radio_tit{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    color:  #050545;
+}
+
+.sex{
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+.sex_choice{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.radio_btn{
+    position: relative;
+    /* align-items: center; */
+}
+
+.radio_btn input{
+    display: none;
+}
+
+.radio_btn label::before,
+.radio_btn label::after{
+    content: '';
+    display: inline-block;
+}
+
+.radio_btn label::before{
+    width: 12px;
+    height: 12px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 8px;
+    
+}
+
+.radio_btn [type='radio']:checked ~ label::before{
+    border-color: #143C3C;
+    background-color: #143C3C;
+}
+
+.radio_btn [type='radio']:checked ~ label::after{
+    top: 3px;
+    left: 2.5px;
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    rotate: -45deg;
+}
+
+
+/* email_news */
+
+.email_news{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    color:  #143C3C;
+}
+
+
+
+/* submit */
+.submit{
+margin-top: 18px;
+margin-left: 500px;
+}
+
+.submit .submit_btn{
+    font-size: 16px;
+    font-weight: 600;
+    color:  #fff;
+    background-color: #143C3C;
+    outline: none;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+.submit .submit_btn:hover{
+    opacity: 0.95;
+    transition: 0.25s;
+}
